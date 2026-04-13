@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connexion à l'espace membre du NDONGANE FC. Accédez à votre compte pour consulter vos informations, le calendrier et les documents du club.">
+    <meta name="keywords" content="connexion NDONGANE FC, espace membre, login">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Connexion - NDONGANE FC</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="presentation.html">
+               <img src="LOGO.jpeg" alt="NDONGANE FC" class="img-fluid" style="max-height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Menu de navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="presentation.html">
+                            <i class="bi bi-house-door me-1"></i>Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipe.html">
+                            <i class="bi bi-people me-1"></i>Équipe
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerie.html">
+                            <i class="bi bi-images me-1"></i>Galerie
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <a href="login.html" class="btn btn-warning">
+                    <i class="bi bi-box-arrow-in-right me-1"></i>Connexion
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== SECTION CONNEXION ========== -->
+    <main class="d-flex align-items-center min-vh-100 py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Card centrée col-md-4 offset-md-4 équivalent -->
+                <div class="col-md-5 col-lg-4">
+                    <div class="card shadow border-0">
+                        <!-- En-tête de la card -->
+                        <div class="card-header bg-success text-white text-center py-4">
+                            <img src="LOGO.jpeg" alt="NDONGANE FC" class="img-fluid" style="max-height: 50px;">
+                            <h3 class="fw-bold mt-2 mb-0">NDONGANE FC</h3>
+                            <p class="mb-0 small">Espace Membre</p>
+                        </div>
+                        <!-- Corps de la card -->
+                        <div class="card-body p-4">
+                            <h4 class="text-center fw-bold mb-4">Connexion</h4>
+
+                            <form action="#" method="post">
+                                <!-- Champ Email -->
+                                <div class="mb-3">
+                                    <label for="loginEmail" class="form-label">
+                                        <i class="bi bi-envelope me-1"></i>Adresse email
+                                    </label>
+                                    <input type="email" class="form-control" id="loginEmail" name="email"
+                                        placeholder="votre@email.com" required>
+                                </div>
+
+                                <!-- Champ Mot de passe -->
+                                <div class="mb-3">
+                                    <label for="loginPassword" class="form-label">
+                                        <i class="bi bi-lock me-1"></i>Mot de passe
+                                    </label>
+                                    <input type="password" class="form-control" id="loginPassword" name="password"
+                                        placeholder="Entrez votre mot de passe" required minlength="8">
+                                    <div class="form-text">Minimum 8 caractères</div>
+                                </div>
+
+                                <!-- Se souvenir de moi -->
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe" name="remember">
+                                    <label class="form-check-label" for="rememberMe">Se souvenir de moi</label>
+                                </div>
+
+                                <!-- Bouton Se connecter (w-100) -->
+                                <button type="submit" class="btn btn-success w-100 mb-3">
+                                    <i class="bi bi-box-arrow-in-right me-2"></i>Se connecter
+                                </button>
+
+                                <!-- Lien mot de passe oublié -->
+                                <div class="text-center">
+                                    <a href="#" class="text-success text-decoration-none">
+                                        <i class="bi bi-question-circle me-1"></i>Mot de passe oublié ?
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Pied de la card -->
+                        <div class="card-footer bg-light text-center py-3">
+                            <p class="mb-0">
+                                Pas encore membre ?
+                                <a href="contact.html" class="text-success fw-bold text-decoration-none">
+                                    Inscrivez-vous ici
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold">
+                        <img src="LOGO.jpeg" alt=" NDONGANE FC" class="img-fluid" style="max-height: 50px;">
+                        NDONGANE FC
+                    </h5>
+                    <p class="text-white-50">
+                        Club sportif fondé en 2020, dédié à la formation et à l'excellence
+                        sportive. Rejoignez-nous pour vivre votre passion du sport.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-warning fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-warning fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-warning fs-5"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-warning fs-5"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="presentation.html" class="text-white-50 text-decoration-none">Accueil</a></li>
+                        <li class="mb-2"><a href="equipe.html" class="text-white-50 text-decoration-none">Équipe & Calendrier</a></li>
+                        <li class="mb-2"><a href="galerie.html" class="text-white-50 text-decoration-none">Galerie photos</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact & Adhésion</a></li>
+                        <li class="mb-2"><a href="login.html" class="text-white-50 text-decoration-none">Espace membre</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Contact</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>NDONGANE, Sénégal</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i>+221 77 717 31 15</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i>ndongane.fc@gmail.com</li>
+                        <li class="mb-2"><i class="bi bi-clock me-2"></i>Lun-Sam : 9h00 - 19h00</li>
+                        <li class="mb-2">
+                            <a href="https://chat.whatsapp.com/FyPWRqeERPRArwMzcsSWUN" class="btn btn-success btn-sm">WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary mt-4">
+            <p class="text-center text-white-50 mb-0">
+                &copy; 2026 NDONGANE FC - Club Sportif. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
